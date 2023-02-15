@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project on delhi Trip</title>
+  <style>* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  
+  #wrapper{
+    height:100vh;
+    overflow-x:hidden;
+    overflow-y:auto;
+  }
+  
+  .container{
+    height:100%;
+    max-width:1200px;
+    margin:0 auto;
+    padding:20px;
+  }
+  
+  .container h1{
+    margin: 20px 100px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+  }
+  
+  .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card {
+    width:32%;
+    position:relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+   
+  .card img{
+    
+    width:100%;
+    height:100%;
+    filter: grayscale(100%);
+    box-shadow: 0 0 20px #333;
+    object-fit: cover;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+    transition: 0.5s;
+    filter: drop-shadow(0 0 10px #333);
+  }
+  
+  
+  .card:hover img {
+    filter: grayscale(0%);
+  }
+  
+  .card figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px;
+    width: 100%;
+    height: 20%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    opacity: 0;
+    border-radius: 0 0 10px 10px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    transition: 0.3s;
+  }
+  
+  .card:hover figcaption {
+    opacity: 1;
+    transform: scale(1.03);
+  }  </style>
+ 
+  
+</head>
+<body>
+  <div id="wrapper">
+
+    <div class="container">
+      <h1>Delhi Trip 2</h1>
+      
+      <div class="gallery">
+        
+        <figure class="card">
+          <img src="https://www.templeduniya.com/wp-content/uploads/2022/03/Untitled-3-min-1020x1024-1.jpg" alt="">
+          <figcaption>akshardham delhi</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Safdar_Jang%E2%80%99s_Tomb%2C_Delhi_.jpg/1200px-Safdar_Jang%E2%80%99s_Tomb%2C_Delhi_.jpg" alt="">
+          <figcaption>Sardar Tomb</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/sites/1/2017/12/05160800/051217_Banglasahib_01.jpg?w=1200&h=628&fill=blur&fit=fill" alt="">
+          <figcaption>Guru Bangla Shahev</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://img.jagranjosh.com/imported/images/E/Articles/7-waste-to-wonder-theme-park.jpg" alt="">
+          <figcaption>Waste of Wonder</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://res.cloudinary.com/thrillophilia/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,q_auto/v1/filestore/ghw187quwj46iu0admc3e4gnw6em_110717_eodadventure11.jpg" alt="">
+          <figcaption>E-O-D park</figcaption>
+      </div>
+    </div>
+
+  
+  </div>
+  
+</body>
+</html>
